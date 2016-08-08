@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+<h1>Listagem de usuários</h1>
+
+<table class="pure-table">
+	<thead>
+		<tr>
+			<td>Usuário</td>
+			<td>Inbox</td>
+			<td>Size</td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @file_paginated.each do |status| %>
+		<tr>
+			<td><%= status[0] %></td>
+			<td><%= status[2] %></td>
+			<td><%= status[4] %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<div class="digg_pagination">
+	<%= paginate @file_paginated %>
+</div>

@@ -1,0 +1,67 @@
+<h1>Usuários</h1>
+
+<div class="clearfix">
+	<div class="greaters">
+		<h3>Usuário com maior Inbox:</h3>
+		<li>
+			<label>User:</label>
+			<span id="greater-inbox-user"></span>
+		</li>
+		<li>
+			<label>Inbox:</label>
+			<span id="greater-inbox-inbox"></span>
+		</li>
+		<li>
+			<label>Size:</label>
+			<span id="greater-inbox-size"></span>
+		</li>
+	</div>
+
+	<div class="greaters">
+		<h3>Usuário com maior Size:</h3>
+		<li>
+			<label>User:</label>
+			<span id="greater-size-user"></span>
+		</li>
+		<li>
+			<label>Inbox:</label>
+			<span id="greater-size-inbox"></span>
+		</li>
+		<li>
+			<label>Size:</label>
+			<span id="greater-size-size"></span>
+		</li>
+	</div>
+</div>
+
+<div class="search">
+	<h2>Pesquisa usuário</h2>
+	<div>
+		<form id="search-user" action="/search" method="get" accept-charset="utf-8">
+			<label>Informe o usuário</label>
+			<input type="email" name="user">
+			<button type="submit">Pesquisar</button>
+		</form>
+
+		<div class="found-user">
+			<li>
+				<label>User:</label>
+				<span id="found-user"></span>
+			</li>
+			<li>
+				<label>Inbox:</label>
+				<span id="found-inbox"></span>
+			</li>
+			<li>
+				<label>Size:</label>
+				<span id="found-size"></span>
+			</li>
+		</div>
+
+	</div>
+</div>
+
+<h2><a href="/all_users">Todos usuários</a></h2>
+
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script -->
+<script src="http://malsup.github.com/jquery.form.js"></script>
